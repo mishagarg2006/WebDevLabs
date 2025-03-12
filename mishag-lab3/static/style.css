@@ -39,10 +39,6 @@ form * {
     display: block;
     margin: auto;
     text-align: center;
-    input.comment {
-        height: 200px; 
-        width: 312px;
-    }
 }
 
 input[type=submit] {

@@ -53,7 +53,7 @@ findTheBanana(L2);
 function greetingFunc(){
     const d = new Date();
     const h = d.getHours();
-    if (h < 12){
+    if (h >= 5 && h < 12){
         if(window.location.href.includes("index.html")){
             document.getElementById("heading").innerHTML = "Good morning, I am Misha";
         }
