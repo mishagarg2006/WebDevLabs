@@ -39,7 +39,7 @@ const L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
 function isBanana(item){
     if (item == "Banana"){
-        //alert("We found a banana in the first array");
+        alert("We found a banana in the first array");
     }
 }
 
