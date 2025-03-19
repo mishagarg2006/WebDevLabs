@@ -92,28 +92,29 @@ function isValid(){
         document.getElementById("error").innerHTML = "Please fill out the form correctly, so I can get back to you."
     }
 }
-
-$("#readLess").click(function(){
-    $("#readLess").hide();
-    $("#readMore").show();
-    $("#longIntro").hide();
+if(window.location.href.includes("index.html")){
+    $("#readLess").click(function(){
+        $("#readLess").hide();
+        $("#readMore").show();
+        $("#longIntro").hide();
 })
-
-$("#readMore").click(function(){
-    console.log("Hello");
-    $("#readLess").show();
-    $("#readMore").hide();
-    $("#longIntro").show();
+}
+if(window.location.href.includes("index.html")){
+    $("#readMore").click(function(){
+        console.log("Hello");
+        $("#readLess").show();
+        $("#readMore").hide();
+        $("#longIntro").show();
 })
-
+}
 function getAdvice(){
     fetch("https://api.adviceslip.com/advice")
-    .then[response => response.json()]
-    .then[data => {
-        document.getElementById["adviceText"].innerHTML = data.slip.advice
-    }]
-    .catch[error => {
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("adviceText").innerHTML = data.slip.advice;
+    })
+    .catch(error => {
         console.error("Error fetching advice:", error);
-        document.getElementById("adviceText").innerText = "Oops! Something went wrong. Try again."
-    }]
+        document.getElementById("adviceText").innerHTML = "Oops! Something went wrong. Try again.";
+    });
 }
