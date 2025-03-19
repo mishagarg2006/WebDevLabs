@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <meta name="autor" content="Misha Garg">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Misha Garg professional website">
+    <title>Misha Garg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="webname">Misha Garg</h1>
+        <nav>
+            <a href="../index.html" target="_self" class="navigation">About</a>
+            <a href="cv.html" target="_self" class="navigation">Resume</a>
+            <a href="fun.html" target="_self" class="navigation">Hobbies</a>
+            <a href="contact.html" target="_self" class="navigation">Contact</a>
+        </nav>
+    </header>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Find Me</h2>
+            <iframe id="map" width="550" height="400" src="../static/cmu.png"></iframe>
+        </div>
+        <div id="item2">
+            <h2>Contact Me</h2>
+            <form>
+                <label for ="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for ="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for ="comment">Comment:</label>
+                <input id="comment" type="text" cols="30" rows="10" name="comment" required class="comment">
+
+                <input type="submit" value="Submit" onclick="isValid()">
+            </form>
+            <p id="error"></p>
+            <table>
+                <tr>
+                    <td>Contact Method</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>mishag@andrew.cmu.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>(925) 416-9373</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td>misha-garg1</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <footer>@2025 designed and coded by Misha Garg</footer>
+    
+</body>
+</html>
